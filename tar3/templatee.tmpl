@@ -1,0 +1,25 @@
+<tmpl_loop name=pswd>
+   <div>
+    <fieldset>
+       <legend><tmpl_var name="user"></legend>
+                <form method=post action=#>
+        <br/>user:
+        <input type="text" name="user" value="<tmpl_var name=user>" placeholder="user" name="user">
+        <br/>pass:
+	<input type="text" name="pass" value="<tmpl_var name=pass>" placeholder="pass" name="pass">
+        <br/>uid:
+        <input type="text" name="uid" value="<tmpl_var name=uid>" placeholder="uid" name="uid">
+	<br/>gid:
+	<input type="text" name="gid" value="<tmpl_var name=gid>" placeholder="gid" name="gid">
+	<br/>desc:
+	<input type="text" name="desc" value="<tmpl_var name=desc>" placeholder="desc" name="desc">
+	<br/>home:
+	<input type="text" name="home" value="<tmpl_var name=home>" placeholder="home" name="home">
+	<br/>shell:
+	<input type="text" name="shell" value="<tmpl_var name=shell>" placeholder="shell" name="shell"
+	 <input type=hidden name ="selector" value ="controler"/>
+        <br/><input type="submit" value="Cambiar"/>
+          </form>
+    </fieldset>
+                                                                     </div>
+</tmpl_loop>
